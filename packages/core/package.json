@@ -1,0 +1,25 @@
+{
+  "name": "@lh-fe/core",
+  "version": "1.0.0",
+  "description": "cli core",
+  "keywords": [
+    "cli"
+  ],
+  "author": "henry.liu <liuhuan2472014@gmail.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/core.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "echo \"执行了core\""
+  },
+  "dependencies": {
+    "@lh-fe/utils": "^1.0.0"
+  }
+}
