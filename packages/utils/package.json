@@ -19,5 +19,8 @@
   "scripts": {
     "test": "echo \"这是Core\""
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "gitHead": "382095372481b03edd722bf2e12fca67d2521ef6"
 }
