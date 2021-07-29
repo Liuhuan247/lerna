@@ -1,6 +1,6 @@
 {
   "name": "@lh-fe/utils",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "工具",
   "keywords": [
     "util"
@@ -18,7 +18,5 @@
   ],
   "scripts": {
     "test": "echo \"这是Core\""
-  },
-  "dependencies": {
   }
 }

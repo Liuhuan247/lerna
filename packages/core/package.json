@@ -1,6 +1,6 @@
 {
   "name": "@lh-fe/core",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "cli core",
   "keywords": [
     "cli"
@@ -20,6 +20,6 @@
     "test": "echo \"执行了core\""
   },
   "dependencies": {
-    "@lh-fe/utils": "^1.0.0"
+    "@lh-fe/utils": "^0.0.1"
   }
 }
