@@ -19,7 +19,11 @@
   "scripts": {
     "test": "echo \"执行了core\""
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "@lh-fe/utils": "^0.0.1"
-  }
+  },
+  "gitHead": "8814bfdd1709466b3b936ce121168d4f8cf130d9"
 }

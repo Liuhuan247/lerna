@@ -18,5 +18,6 @@
   ],
   "scripts": {
     "test": "echo \"这是Core\""
-  }
+  },
+  "gitHead": "8814bfdd1709466b3b936ce121168d4f8cf130d9"
 }
