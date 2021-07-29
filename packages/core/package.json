@@ -1,6 +1,6 @@
 {
   "name": "@lh-fe/core",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "cli core",
   "keywords": [
     "cli"
@@ -21,8 +21,6 @@
   },
   "publishConfig": {
     "access": "public"
-  },
-  "dependencies": {
   },
   "gitHead": "8c158c3ca7e9385f73742379de50544ac1b0e39a"
 }
