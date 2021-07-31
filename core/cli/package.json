@@ -25,7 +25,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "382095372481b03edd722bf2e12fca67d2521ef6",
+  "gitHead": "624be05df2b8bd8673d078ab579be78db8c5b703",
   "dependencies": {
     "@lh-fe/utils": "^0.0.5",
     "import-local": "^3.0.2",
