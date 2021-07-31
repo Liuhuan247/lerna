@@ -13,6 +13,7 @@
     "access": "public"
   },
   "devDependencies": {
+    "@lh-fe/core": "^0.0.4",
     "lerna": "^4.0.0"
   }
 }

@@ -1,9 +1,11 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@lh-fe/core': ^0.0.4
   lerna: ^4.0.0
 
 devDependencies:
+  '@lh-fe/core': 0.0.4
   lerna: 4.0.0
 
 packages:
@@ -715,6 +717,10 @@ packages:
       write-file-atomic: 3.0.3
     dev: true
 
+  /@lh-fe/core/0.0.4:
+    resolution: {integrity: sha512-tL7QeulD2ihTC/SPf3n1PygYxseDmaYODMwOyieniWoHvayYNocjFguhejpd2U4eSoNvbV3Yi9L+LMVkAAUd1Q==}
+    dev: true
+
   /@nodelib/fs.scandir/2.1.5:
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
     engines: {node: '>= 8'}
@@ -828,6 +834,10 @@ packages:
     resolution: {integrity: sha512-xmyPP9tVb4T4A6Lk6SL6ScnIqAHpPV4jfMZI8VtY286212ri9J/6IFGuLsZ26daADUmriuLejake4k+azEfnaw==}
     dev: true
 
+  /@octokit/openapi-types/9.2.0:
+    resolution: {integrity: sha512-c4A1Xm0At+ypvBfEETREu519wLncJYQXvY+dBGg/V5YA51eg5EwdDsPPfcOMG0cuXscqRvsIgIySTmTJUdcTNA==}
+    dev: true
+
   /@octokit/plugin-enterprise-rest/6.0.1:
     resolution: {integrity: sha512-93uGjlhUD+iNg1iWhUENAtJata6w5nE+V4urXOAlIXdco6xNZtUSfYY8dzp3Udy74aqO/B5UZL80x/YMa5PKRw==}
     dev: true
@@ -838,7 +848,7 @@ packages:
       '@octokit/core': '>=2'
     dependencies:
       '@octokit/core': 3.5.1
-      '@octokit/types': 6.21.1
+      '@octokit/types': 6.22.0
     dev: true
 
   /@octokit/plugin-request-log/1.0.4_@octokit+core@3.5.1:
@@ -855,7 +865,7 @@ packages:
       '@octokit/core': '>=3'
     dependencies:
       '@octokit/core': 3.5.1
-      '@octokit/types': 6.21.1
+      '@octokit/types': 6.22.0
       deprecation: 2.3.1
     dev: true
 
@@ -891,6 +901,12 @@ packages:
     resolution: {integrity: sha512-PP+m3T5EWZKawru4zi/FvX8KL2vkO5f1fLthx78/7743p7RtJUevt3z7698k+7oAYRA7YuVqfXthSEHqkDvZ8g==}
     dependencies:
       '@octokit/openapi-types': 9.1.1
+    dev: true
+
+  /@octokit/types/6.22.0:
+    resolution: {integrity: sha512-Y8GR0BJHQDpO09qw/ZQpN+DXrFzCWaE0pvK4frDm3zJ+h99AktsFfBoDazbCtHxiL8d0jD8xRH4BeynlKLeChg==}
+    dependencies:
+      '@octokit/openapi-types': 9.2.0
     dev: true
 
   /@tootallnate/once/1.1.2:

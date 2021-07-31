@@ -27,6 +27,8 @@
   },
   "gitHead": "382095372481b03edd722bf2e12fca67d2521ef6",
   "dependencies": {
-    "@lh-fe/utils": "^0.0.4"
+    "@lh-fe/utils": "^0.0.4",
+    "import-local": "^3.0.2",
+    "npmlog": "^5.0.0"
   }
 }
