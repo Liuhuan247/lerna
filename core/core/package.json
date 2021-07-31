@@ -9,6 +9,9 @@
   "homepage": "",
   "license": "ISC",
   "main": "lib/core.js",
+  "bin": {
+    "hl": "bin/index.js"
+  },
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -22,5 +25,8 @@
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "382095372481b03edd722bf2e12fca67d2521ef6"
+  "gitHead": "382095372481b03edd722bf2e12fca67d2521ef6",
+  "dependencies": {
+    "@lh-fe/utils": "^0.0.4"
+  }
 }
