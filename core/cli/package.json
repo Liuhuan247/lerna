@@ -1,6 +1,6 @@
 {
   "name": "@lh-fe/core",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "cli core",
   "keywords": [
     "cli"
@@ -27,7 +27,7 @@
   },
   "gitHead": "624be05df2b8bd8673d078ab579be78db8c5b703",
   "dependencies": {
-    "@lh-fe/utils": "^0.0.5",
+    "@lh-fe/utils": "^0.0.6",
     "import-local": "^3.0.2",
     "npmlog": "^5.0.0"
   }
