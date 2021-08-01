@@ -1,7 +1,15 @@
 'use strict';
 
+const pkg = require('../package.json');
+const log = require('@lh-fe/log');
+
 module.exports = core;
 
 function core() {
-    console.log("走到了else逻辑，执行了lib中的core文件")
+    // 检查cli版本号
+    checkPackageVersion();
+}
+
+function checkPackageVersion() {
+    log.notice('cli', pkg.version);
 }
