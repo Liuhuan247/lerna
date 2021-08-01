@@ -29,7 +29,9 @@
   "dependencies": {
     "@lh-fe/log": "^0.0.6",
     "@lh-fe/utils": "^0.0.6",
+    "colors": "^1.4.0",
     "import-local": "^3.0.2",
-    "npmlog": "^5.0.0"
+    "npmlog": "^5.0.0",
+    "semver": "^7.3.5"
   }
 }
