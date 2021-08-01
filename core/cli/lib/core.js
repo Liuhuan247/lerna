@@ -15,10 +15,19 @@ function core() {
         checkPackageVersion();
         // 检查node版本号
         checkNodeVersion()
+    //    检查root账户
+        checkRoot();
 
     } catch (e) {
         log.error(e.message);
     }
+}
+
+function checkRoot() {
+    // sudo root类型检查，如果是root默认会降级成普通用户去处理
+    const rootCheck = require('root-check');
+    rootCheck()
+    console.log(process.geteuid())
 }
 
 function checkNodeVersion() {
