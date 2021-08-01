@@ -9,6 +9,8 @@ const pathExists = require('path-exists');
 const pkg = require('../package.json');
 const constant = require('./const');
 
+let args;
+
 module.exports = core;
 
 function core() {
@@ -20,15 +22,34 @@ function core() {
         // 检查root账户
         checkRoot();
         // 检查用户主目录
-        checkUserHome()
+        checkUserHome();
+
+        // 检查入参，是否是debug模式等
+        checkInputArgs()
+        log.verbose('debug', 'test debug log');
 
     } catch (e) {
         log.error(e.message);
     }
 }
 
+function checkInputArgs() {
+    const minimist = require('minimist');
+    args = minimist(process.argv.slice(2));
+    checkArgs()
+}
+
+function checkArgs() {
+    if (args.debug) {
+        process.env.LOG_LEVEL = "verbose";
+    } else {
+        process.env.LOG_LEVEL = "info";
+    }
+    log.level = process.env.LOG_LEVEL;
+}
+
 function checkUserHome() {
-    if (!userHome() || !pathExists(userHome)) throw new Error(colors.red('当前登录用户主目录不存在！'))
+    if (!userHome || !pathExists(userHome)) throw new Error(colors.red('当前登录用户主目录不存在！'))
 }
 
 function checkRoot() {
