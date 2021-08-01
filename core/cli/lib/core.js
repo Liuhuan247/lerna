@@ -3,6 +3,8 @@
 const semver = require('semver');
 const colors = require('colors/safe')
 const log = require('@lh-fe/log');
+const userHome = require('user-home');
+const pathExists = require('path-exists');
 
 const pkg = require('../package.json');
 const constant = require('./const');
@@ -15,12 +17,18 @@ function core() {
         checkPackageVersion();
         // 检查node版本号
         checkNodeVersion()
-    //    检查root账户
+        // 检查root账户
         checkRoot();
+        // 检查用户主目录
+        checkUserHome()
 
     } catch (e) {
         log.error(e.message);
     }
+}
+
+function checkUserHome() {
+    if (!userHome() || !pathExists(userHome)) throw new Error(colors.red('当前登录用户主目录不存在！'))
 }
 
 function checkRoot() {
