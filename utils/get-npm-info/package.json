@@ -1,0 +1,38 @@
+{
+  "name": "@lh-fe/get-npm-info",
+  "version": "0.0.6",
+  "description": "get npm info",
+  "keywords": [
+    "npm",
+    "info"
+  ],
+  "author": "henry.liu <liuhuan2472014@gmail.com>",
+  "homepage": "https://github.com/Liuhuan247/lerna#readme",
+  "license": "ISC",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Liuhuan247/lerna.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/Liuhuan247/lerna/issues"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "semver": "^7.3.5",
+    "url-join": "^4.0.1"
+  }
+}
