@@ -43,11 +43,13 @@ async function checkGlobalUpdate() {
     const currentVersion = pkg.version;
     const pkgName = pkg.name;
    // 2. 调用npm api获取所有版本号
-    const {getNpmInfo} = require('@lh-fe/get-npm-info');
-    const data = await getNpmInfo(pkgName);
-    console.log(data);
-   //  3. 提取最新版本号
+    const {getNpmSemverVersions} = require('@lh-fe/get-npm-info');
+    const lastVersion = await getNpmSemverVersions(currentVersion, pkgName);
+    if (lastVersion && semver.gt(lastVersion, currentVersion)) {
+        log.warn(colors.yellow(`请手动更新${pkgName}, 当前版本为${currentVersion}，最新版本为${lastVersion}, 更新命令为npm install -g ${pkgName}`))
+    }
 }
+
 
 function checkEnv() {
     const dotEnv =require('dotenv');
