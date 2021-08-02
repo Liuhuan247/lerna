@@ -14,7 +14,7 @@ let args, config;
 
 module.exports = core;
 
-function core() {
+async function core() {
     try {
         // 检查cli版本号
         checkPackageVersion();
@@ -28,11 +28,25 @@ function core() {
         // 检查入参，是否是debug模式等
         checkInputArgs()
         log.verbose('debug', 'test debug log');
+        // 检查环境变量
         checkEnv();
+
+        await checkGlobalUpdate();
 
     } catch (e) {
         log.error(e.message);
     }
+}
+
+async function checkGlobalUpdate() {
+   // 1. 获取当前版本号
+    const currentVersion = pkg.version;
+    const pkgName = pkg.name;
+   // 2. 调用npm api获取所有版本号
+    const {getNpmInfo} = require('@lh-fe/get-npm-info');
+    const data = await getNpmInfo(pkgName);
+    console.log(data);
+   //  3. 提取最新版本号
 }
 
 function checkEnv() {
